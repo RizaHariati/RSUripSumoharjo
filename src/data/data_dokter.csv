@@ -1,0 +1,47 @@
+id,nama,waktu,poli,hari,jam,gender
+dok1,"dr. M. Iqbal, Sp.A.",pagi (On call),Anak,Minggu,Pkl 09.00 s/d 10.00 WIB (On Call),male
+dok2,"dr. Murdoyo, Sp.A.",Pagi,Anak,Minggu ke-1 dan ke-3,Pkl 09.00 s/d 10.00 WIB (on Call),male
+dok3,"dr. Surachman, Sp.A",Sore,Anak,"Senin , Kamis, Jum'at dan Sabtu",Pkl 18.00 WIB s/d Selesai,male
+dok4,"dr. Nina Herlina, Sp.A.",Sore,Anak,Senin s/d Jum'at,Pkl 16.00 s/d 18.00 WIB,female
+dok5,"dr. Syahrifil Syahar, Sp.B.",Pagi (On Call),Bedah,Minggu (On Call),Pkl 11.00 s/d 12.00 WIB,male
+dok6,"dr Bintang Siregar, Sp.B (K) Onk",Pagi (khusus BPJS),Bedah,Rabu (Khusus BPJS),Pkl 08:00 WIB s/d Selesai,male
+dok7,"dr. Deasiana Paksi Moeda , Sp. B",Sore,Bedah,Sabtu,Pkl 15.30 WIB s/d Selesai,female
+dok8,"dr. Tofik Rahmanto,Sp.B",Siang (On Call),Bedah,Sabtu (On Call),Pkl 13.00 s/d 15.00 WIB,male
+dok9,"dr. M. Agusni, Sp.B.",Pagi,Bedah,Senin s/d Sabtu,Pkl 09.00 WIB s/d selesai,male
+dok10,"dr. Yuzar Harun, Sp.B.",Sore,Bedah,Senin s/d Sabtu,Oncall,male
+dok11,"drg. Agus Salim, Sp.BM",Sore,Bedah Mulut,Senin s/d Sabtu,Pkl 16.00 WIB s/d Selesai on Call,male
+dok12,"dr. Adyananto, Sp.BS.",Pagi,Bedah Syaraf,Rabu dan Kamis,Pkl 09.00 s/d 11.00 WIB,male
+dok13,"dr. M. Yunus, Sp.BS.",Siang,Bedah Syaraf,Senin dan Selasa,Pkl 13.00 WIB s/d selesai,male
+dok14,"Dr. Dewi Nur Fiana, Sp.KFR",Sore,Fisik dan Rehabilitasi,"Senin, Rabu dan Jum'at",14.00 sd 16.30 WIB,female
+dok15,"dr. Riana Handayani, SP.JP (K) FIHA",Siang,Jantung dan Pembuluh Darah,"Senin, Rabu dan Jumat",Pkl 14.00 s/d 16.00 WIB,female
+dok16,"dr. Asrizal, Sp JP",Pagi,Jantung dan Pembuluh Darah,"Senin, Selasa, Rabu, Kamis dan Sabtu",Pkl 09:00 s/d 11:30 WIB,male
+dok17,"dr. Azman Roni, Sp.OG.",Pagi (On Call),Kandungan,Minggu (On Call),Pkl 10.00 s/d 12.00 WIB,male
+dok18,"dr. Taufiqurrahman R, SP.OG (K)",Pagi (On Call),Kandungan,Rabu dan Jumat (On Call),Pkl 09.00 s/d 11.00 WIB,male
+dok19,"dr. Arif Effendi, Sp.KK",Sore,Kulit Kelamin,"Selasa, Kamis, dan Sabtu",Pkl 16.00 s/d 18.30 WIB,male
+dok20,"dr. Yulisna, Sp.KK",Sore,Kulit Kelamin,"Senin, Rabu dan Jum'at",Pkl 16.00 s/d 18.00 WIB,female
+dok21,"dr Dino Rinaldi, Sp.OG (K) Onk",Siang,Onkologi,Jum'at,Pkl 14.00 s/d Selesai WIB,male
+dok22,"dr. Rachmadi, Sp.B (K) Onk",Siang (Khusus BPJS),Onkologi,Senin (Khusus BPJS),Pkl 14.00 WIB s/d Selesai,male
+dok23,"dr. Bayu, Sp. OT",pagi (on call),Ortopedi,Minggu,Pkl 08.00 s/d 10.00 WIB (on call),male
+dok24,"dr. Ahmad Fauzi, Sp.OT",Sore,Ortopedi,"Senin, Rabu dan Jumat",Pkl 15:30 s/d 17:00 WIB,male
+dok25,"dr. Rizki Hanriko, Sp. PA",-,Patologi Anatomi,Sabtu,on call,male
+dok26,"dr. Ade Yonata,Sp.PD-KGH",Sore,Penyakit Dalam,Jumat,Pkl 16.00 WIB s/d selesai,male
+dok27,"dr. Imron, Sp.PD.",Sore,Penyakit Dalam,Jumat & Sabtu,18.00 s/d 20.00 WIB,male
+dok28,"dr. Marina, Sp.PD.",pagi (on call),Penyakit Dalam,Minggu,Pkl 11.00 s/d 12.00 WIB (on call),female
+dok29,"dr. Juspeni Kartika,Sp.PD-KHOM",Siang,Penyakit Dalam,"Selasa, Kamis dan Jum'at",Pkl 14.00 WIB s/d Selesai,female
+dok30,"dr. Ridhuan Irawan, Sp.PD.",Pagi (BPJS),Penyakit Dalam,Senin & Kamis (BPJS),Pkl 10.00 s/d 12.00 WIB,male
+dok31,"dr. Hasmi Maha, Sp.PD.",Sore,Penyakit Dalam,Senin s/d Kamis,Pkl 18.00 s/d 20.00,male
+dok32,"dr. Farida Oktarina,SP.M",Siang,Penyakit Mata,"Selasa, Kamis dan Jum'at",Pkl 14.00 s/d 17.00 WIB,female
+dok33,"dr. Helmi Muchtar, Sp.M.",Sore,Penyakit Mata,"Selasa, Kamis dan Sabtu",Pkl 16.30 WIB s/d Selesai,male
+dok34,"dr. Helmi Muchtar, Sp.M.",Pagi (BPJS) dan Sore,Penyakit Mata,"Selasa, Kamis dan Sabtu",Pkl 08.00 s/d 10.00 WIB (khusus BPJS) dan Pkl 17.00 WIB s/d selesai,male
+dok35,"dr. Aryanti Ibrahim, Sp.M.",Sore,Penyakit Mata,"Senin, Rabu dan Jumat",Pkl 18.00 WIB s/d Selesai,female
+dok36,"dr. Adhari , Sp.P",Siang (BPJS),Penyakit Paru,Rabu (BPJS),Pkl 13.00 s/d 15.00 WIB,female
+dok37,"dr. Pad Dilangga, Sp.P.",Sore,Penyakit Paru,Selasa dan Kamis,14.30 WIB s/d Selesai,male
+dok38,"dr. Nina Marlina, Sp.P.",Siang,Penyakit Paru,Senin dan Jumat,Pkl 14.00 s/d 16.00 WIB,female
+dok39,"dr. Sanjoto Santibudi, Sp.RM",Pagi,Rehabilitasi Medis,Sabtu,Pkl 10.00 s/d 11.30 WIB,male
+dok40,"dr. RA. Neilan Amroisa, Sp.S.,M.Kes.",Sore,Syaraf,"Senin, Rabu, Jum'at",Pkl 14.30 WIB s/d Selesai,female
+dok41,"dr. Suharsono, Sp.S.,M.Kes.",Pagi,Syaraf,Senin s/d Sabtu,10.00 WIB s/d Selesai,male
+dok42,"dr Khairani, Sp. THT",Pagi (On Call),Telinga Hidung Tenggorokan,Minggu (On Call),Pkl 09.00 s/d 10.30 WIB,female
+dok43,"dr Hanggoro, Sp.THT",Sore,Telinga Hidung Tenggorokan,Senin s/d Sabtu,Pkl 17.30 s/d 20:00 WIB,male
+dok44,"dr. Yaya Hadinata, Sp.U",Pagi (On Call),Urologi,Minggu (On Call),Pkl 10.00 s/d 12.00 WIB,male
+dok45,"dr. Mars Dwi Cahyo, Sp.U",Sore,Urologi,Selasa & Jum'at,Pkl 15.30 WIB s/d Selesai,male
+dok46,"dr. Ikrizal, Sp.U",Sore,Urologi,"Senin Rabu, Kamis dan Sabtu",Pkl 17.00 s/d 19.00,male
