@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;900&display=swap");
 :root {
   --light1: #fefefc;
   --light2: white;
@@ -13,8 +12,8 @@
   --accent: red;
   --accent: #fc3f3f;
   --accent-hover: #ca0404;
-  --font-family: "Lato", sans-serif;
-  --secondary-font: "Tenor Sans", sans-serif;
+  --font-family: "Urbanist", sans-serif;
+  --secondary-font: "Urbanist", sans-serif;
   --transition: all 0.2s ease-in-out;
   --border: 1px solid var(--light1);
   --border-green: 1px solid var(--green1);
@@ -149,6 +148,7 @@ body::-webkit-scrollbar {
   cursor: pointer;
   font-size: 1.2rem;
   background-color: transparent;
+  color: var(--green1);
   border: transparent;
   text-transform: capitalize;
   -webkit-transition: var(--transition);
@@ -173,10 +173,11 @@ body::-webkit-scrollbar {
 
 .nav-btn i {
   margin-right: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .nav-btn:hover {
-  color: var(--green1);
+  color: var(--dark3);
 }
 
 .nav-btn:hover span {
@@ -184,7 +185,7 @@ body::-webkit-scrollbar {
 }
 
 .nav-btn:focus {
-  color: var(--green1);
+  color: var(--dark3);
 }
 
 .nav-btn:focus span {
@@ -526,10 +527,6 @@ body::-webkit-scrollbar {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  place-items: center;
 }
 
 .ex-menu {
@@ -566,7 +563,7 @@ body::-webkit-scrollbar {
 }
 
 .ex-menu h2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .ex-menu:hover {
@@ -681,6 +678,12 @@ body::-webkit-scrollbar {
   margin-top: 1rem;
 }
 
+.ex-menu-list span {
+  color: var(--green1);
+  font-weight: 900;
+  margin-right: 0.5rem;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     -ms-grid-columns: 65% 35%;
@@ -727,7 +730,7 @@ body::-webkit-scrollbar {
     font-size: 1.8rem;
   }
   .ex-menu h2 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .nav-submenu {
     width: 100%;
@@ -746,14 +749,14 @@ body::-webkit-scrollbar {
         grid-template-rows: 4.5rem auto;
   }
   .ex-menu {
-    line-height: 1rem;
+    line-height: 1.4rem;
   }
   .ex-menu i {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .ex-menu h2 {
-    font-size: 0.7rem;
-    letter-spacing: 1px;
+    font-size: 0.9rem;
+    letter-spacing: normal;
   }
 }
 
@@ -779,7 +782,7 @@ body::-webkit-scrollbar {
     margin: 0;
   }
   .nav-btn {
-    font-size: 1rem !important;
+    font-size: 1.3rem !important;
   }
   .nav-btn p {
     display: none;
@@ -796,28 +799,35 @@ body::-webkit-scrollbar {
   .container {
     height: calc(100vh - 4rem);
     position: absolute;
-    top: 4rem;
+    bottom: 0;
     -ms-grid-rows: 4rem auto;
         grid-template-rows: 4rem auto;
   }
   .exclusive-menu {
     min-height: 40px;
-  }
-  .banner {
-    width: 100%;
+    height: 100%;
   }
   .ex-menu {
-    line-height: 0.6rem;
+    height: 100%;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    line-height: 0.9rem;
     -webkit-box-shadow: none;
             box-shadow: none;
+    padding: 0.5rem 0;
   }
   .ex-menu i {
     font-size: 1.4rem;
-    margin-bottom: 2px;
+    line-height: 1.6rem;
   }
   .ex-menu h2 {
-    font-size: 0.5rem;
-    letter-spacing: 0.5px;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+  }
+  .banner {
+    width: 100%;
   }
 }
 
@@ -831,9 +841,6 @@ body::-webkit-scrollbar {
     -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.568);
             box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.568);
   }
-  .logo img {
-    width: 80%;
-  }
   .nav-links {
     grid-gap: 1rem;
     padding: 0;
@@ -842,41 +849,9 @@ body::-webkit-scrollbar {
     padding: 0;
     margin: 0;
   }
-  .nav-btn {
-    font-size: 1rem !important;
-  }
-  .nav-btn p {
-    display: none;
-  }
   .nav-submenu {
     top: 4.05rem;
     height: 50vh;
-  }
-  .container {
-    height: calc(100vh - 4rem);
-    position: absolute;
-    bottom: 0;
-    -ms-grid-rows: 4rem auto;
-        grid-template-rows: 4rem auto;
-  }
-  .exclusive-menu {
-    min-height: 40px;
-  }
-  .banner {
-    width: 100%;
-  }
-  .ex-menu {
-    line-height: 0.6rem;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .ex-menu i {
-    font-size: 1.4rem;
-    margin-bottom: 2px;
-  }
-  .ex-menu h2 {
-    font-size: 0.5rem;
-    letter-spacing: 0.5px;
   }
 }
 
@@ -891,6 +866,10 @@ body::-webkit-scrollbar {
   position: relative;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
+}
+
+.home-intro {
+  display: none;
 }
 
 .arrow {
@@ -1509,6 +1488,7 @@ label {
 
 .field-text {
   width: 300px;
+  height: 1.4rem;
 }
 
 .daftar-btn {
@@ -1936,24 +1916,109 @@ label {
 }
 
 @media screen and (max-width: 600px) {
+  .home {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .home-images {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+  .home-intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+  .home-intro h2 {
+    font-weight: 600;
+    letter-spacing: normal;
+    color: var(--green1);
+    text-transform: capitalize;
+    z-index: 3;
+    font-size: 1.4rem;
+    padding: 0 1rem;
+  }
+  .home-intro h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    z-index: 3;
+    letter-spacing: normal;
+    color: var(--dark2);
+  }
+  .home-intro img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom left;
+       object-position: bottom left;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+  }
   .home-welcome {
-    left: 2rem;
+    left: 3rem;
     width: 80%;
     top: auto;
-    bottom: 4rem;
+    bottom: 0rem;
+  }
+  .arrow {
+    font-size: 2rem;
+  }
+  .arrow.prev {
+    left: 1rem;
+  }
+  .arrow.next {
+    right: 1rem;
   }
   .home-title h1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+  .home-text h4 {
+    font-size: 1rem;
   }
   .ex-menu-header h1 {
     font-size: 1.5rem;
   }
   .ex-menu-header h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: normal;
   }
   .ex-menu-subhead h1 {
     font-size: 1.5rem;
+  }
+  .ex-menu-list {
+    margin-top: 1rem;
+  }
+  .ex-menu-list h3 {
+    line-height: 1.2rem;
+    font-size: 1rem;
+    letter-spacing: normal;
+  }
+  .ex-menu-list span {
+    color: var(--green1);
+    font-weight: 900;
+    margin-right: 0.5rem;
   }
   .search-container {
     width: 90%;
@@ -1964,10 +2029,31 @@ label {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .form-search {
+    height: 130px;
+  }
+  .search-label {
+    line-height: 1.5rem;
+  }
+  .search-label h3 {
+    letter-spacing: normal;
+    font-size: 1.2rem;
+  }
+  .search-header {
+    height: 2rem;
+  }
+  .search-header input {
+    font-size: 1rem;
+  }
+  .search-header.nama {
+    grid-gap: 1rem;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
   .pelayanan-content {
     margin: auto;
     width: 90%;
-    line-height: 1.4rem;
+    line-height: 1.2rem;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 1rem;
@@ -1978,6 +2064,9 @@ label {
   .pelayanan-info h2 {
     font-size: 1.2rem;
   }
+  .pelayanan-info p {
+    font-size: 0.9rem;
+  }
   .ex-menu-intro {
     height: 120px;
   }
@@ -1985,10 +2074,14 @@ label {
     width: 70%;
   }
   .ex-menu-intro .info {
-    width: 70%;
+    background-color: rgba(255, 255, 255, 0.452);
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0.5rem;
   }
   .ex-menu-intro .info h4 {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    line-height: 1rem;
     letter-spacing: normal;
   }
   .rawat-inap-pilihan h2 {
@@ -2059,9 +2152,12 @@ label {
     width: 100px;
   }
   .fasilitas-info h4 {
-    line-height: 1rem;
-    font-size: 0.7rem;
-    height: 2rem;
+    margin: auto;
+    line-height: 0.9rem;
+    font-size: 0.8rem;
+    height: 3rem;
+    padding: 0.3rem;
+    letter-spacing: normal;
   }
   .fasilitas-info img {
     height: 100px;
@@ -2082,10 +2178,13 @@ label {
     padding: 0.5rem;
   }
   .paket-info h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .paket-info h4 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+    letter-spacing: normal;
+    margin: 0;
   }
   .paket-harga {
     margin-bottom: 0.5rem;
@@ -2116,7 +2215,7 @@ label {
     line-height: 1.2rem;
   }
   .field-login {
-    height: 1.2rem;
+    height: 1.4rem;
     font-size: 0.8rem;
     text-indent: 0.5rem;
   }
@@ -2127,67 +2226,31 @@ label {
 }
 
 @media only screen and (max-device-width: 480px) {
-  .home-welcome {
-    left: 2rem;
-    width: 80%;
-    top: auto;
-    bottom: 4rem;
-  }
-  .home-title h1 {
-    font-size: 1.4rem;
-    letter-spacing: 2px;
-  }
-  .home-text h4 {
-    letter-spacing: normal;
-  }
   .ex-menu-content {
     min-height: calc(100vh - 7rem);
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     grid-gap: 1rem;
-  }
-  .ex-menu-header h1 {
-    font-size: 1.3rem;
-  }
-  .ex-menu-header h3 {
-    font-size: 0.9rem;
-    letter-spacing: normal;
-  }
-  .ex-menu-header h4 {
-    font-size: 0.9rem;
   }
   .ex-menu-subhead h1 {
     font-size: 1.5rem;
     letter-spacing: normal;
   }
-  .search-container {
-    width: 90%;
-    margin: auto;
-    margin-top: 2rem;
+  .ex-menu-intro {
+    height: 160px;
   }
-  .search-container.dokter {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+  .ex-menu-intro .image {
+    width: 70%;
   }
-  .form-search {
-    height: 130px;
+  .ex-menu-intro .info {
+    background-color: rgba(255, 255, 255, 0.452);
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0.5rem;
   }
-  .search-label {
-    line-height: 1.5rem;
-  }
-  .search-label h3 {
+  .ex-menu-intro .info h4 {
+    font-size: 0.9rem;
+    line-height: 1rem;
     letter-spacing: normal;
-    font-size: 1rem;
-  }
-  .search-header {
-    height: 2rem;
-  }
-  .search-header input {
-    font-size: 0.8rem;
-  }
-  .search-header.nama {
-    grid-gap: 1rem;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
   }
   .dokter-container {
     -ms-grid-columns: 1fr 1fr;
@@ -2220,28 +2283,6 @@ label {
   .pendaftaran-intro {
     margin-top: 2rem;
   }
-  .pendaftaran-intro .text {
-    font-size: 0.7rem;
-  }
-  .pelayanan-content {
-    width: 80%;
-    line-height: 1.2rem;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-gap: 1rem;
-  }
-  .pelayanan-info {
-    min-height: 125px;
-  }
-  .pelayanan-info h2 {
-    font-size: 1rem;
-  }
-  .pelayanan-info h4 {
-    font-size: 0.9rem;
-  }
-  .pelayanan-info p {
-    font-size: 0.7rem;
-  }
   .list-search {
     font-size: 0.8rem;
     line-height: 2rem;
@@ -2262,9 +2303,6 @@ label {
   }
   .radio input {
     margin-right: 0.5rem;
-  }
-  .field {
-    margin-top: 0.2rem;
   }
   .daftar-btn {
     width: 100px;
@@ -2318,28 +2356,28 @@ label {
 .rule-header {
   width: 100%;
   margin: 1rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-grid-columns: 90% 10%;
+      grid-template-columns: 90% 10%;
 }
 
 .rule-header h3 {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .rule-header button {
+  margin-left: auto;
   background-color: transparent;
   border: var(--border-green);
   color: var(--green1);
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
 }
 
 .rule-info {
@@ -2348,8 +2386,9 @@ label {
 }
 
 .rule-info li {
-  letter-spacing: 0.5px;
-  margin: 1rem 0;
+  letter-spacing: normal;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
   border-top: 1px solid var(--green2);
 }
 
@@ -2618,7 +2657,7 @@ label {
   width: 5rem;
   display: block;
   margin-right: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   height: 3px;
   background-color: var(--green1);
 }
@@ -2629,7 +2668,7 @@ label {
 
 .modal-info .text {
   color: black;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   text-align: left;
   margin-top: 1rem;
 }
@@ -2686,6 +2725,17 @@ label {
     border: var(--border-green);
     height: 25vh;
   }
+  .loker-item h3 {
+    font-size: 1rem;
+    letter-spacing: normal;
+  }
+  .loker-item h4 {
+    line-height: 1.2rem;
+    font-size: 1rem;
+  }
+  .loker-item .line {
+    margin-bottom: 0.25rem;
+  }
   .loker-content {
     height: 48vh;
   }
@@ -2699,25 +2749,23 @@ label {
   .loker-content-list {
     line-height: 1rem;
     font-size: 0.8rem;
-  }
-  .rules-container {
-    padding: 1rem;
+    margin-left: 1rem;
   }
   .rules-header h3 {
-    font-size: 0.8rem;
-    letter-spacing: 0.1rem;
-  }
-  .rule-header {
-    margin: 0.5rem 0;
+    font-size: 1rem;
   }
   .rule-header h3 {
-    font-size: 0.8rem;
-    letter-spacing: 1px;
+    font-weight: 500;
+    letter-spacing: 0;
+    font-size: 1rem;
   }
   .rule-info li {
-    padding-top: 1rem;
-    margin: 1rem 0;
-    font-size: 0.8rem;
+    margin: 0rem;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+  .rule-container {
+    margin: 0.5rem 0;
   }
   .about-container {
     min-height: calc(100vh - 4rem);
@@ -2747,32 +2795,41 @@ label {
     font-size: 0.8rem;
     line-height: 1rem;
   }
-  .about-info {
-    letter-spacing: 0.5px;
-  }
   .about-info h4 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+  }
+  .about-details {
+    margin: 0 1rem;
   }
   .modal-content {
     width: 90%;
-    height: 60vh;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem 2rem;
+    grid-gap: 0.5rem;
   }
   .modal-image {
-    height: 40%;
+    position: static;
+    width: 100%;
+    height: 100%;
   }
   .modal-info {
-    position: absolute;
-    bottom: 0rem;
-    left: 1.5rem;
-    width: 90%;
+    width: 100%;
   }
   .modal-info .header {
     width: auto;
   }
   .modal-info .header h2 {
     white-space: pre-wrap;
+  }
+  .modal-info .text {
+    line-height: 1rem;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

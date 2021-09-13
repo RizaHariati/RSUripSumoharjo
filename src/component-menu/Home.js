@@ -52,6 +52,14 @@ const Home = () => {
           </button>
         </div>
       </div>
+      <div className="home-intro">
+        <h2>Bekerja sambil beramal dan mengobati sambil beramal </h2>
+        <h3>
+          Dengan semangat Islami, yang menyediakan pelayanan kesehatan untuk
+          semua kalangan sebagai bagian dari rahmat untuk alam semesta
+        </h3>
+        <img src="/assets/images/wave.jpg" alt="wave" />
+      </div>
     </div>
   );
 };
