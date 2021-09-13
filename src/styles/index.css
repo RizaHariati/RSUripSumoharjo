@@ -212,7 +212,7 @@ body::-webkit-scrollbar {
   height: calc(100vh - 8rem);
   top: 5rem;
   right: 0;
-  z-index: 4;
+  z-index: 5;
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
   padding: 3rem 1rem;
@@ -734,6 +734,7 @@ body::-webkit-scrollbar {
   }
   .nav-submenu {
     width: 100%;
+    z-index: 5;
   }
   .nav-wave {
     height: 50%;
@@ -792,6 +793,7 @@ body::-webkit-scrollbar {
     line-height: 1rem;
     top: 4.05rem;
     height: 60vh;
+    z-index: 5;
   }
   .nav-wave {
     height: 50%;
@@ -799,7 +801,7 @@ body::-webkit-scrollbar {
   .container {
     height: calc(100vh - 4rem);
     position: absolute;
-    bottom: 0;
+    top: 4rem;
     -ms-grid-rows: 4rem auto;
         grid-template-rows: 4rem auto;
   }
@@ -852,6 +854,7 @@ body::-webkit-scrollbar {
   .nav-submenu {
     top: 4.05rem;
     height: 50vh;
+    z-index: 5;
   }
 }
 
