@@ -48,13 +48,13 @@ const Promo = () => {
                 <div
                   className="promo-info vaksin"
                   style={{
-                    background: `linear-gradient(135deg, #80ad6b15,  #80ad6b15, #80ad6bb6  45%,#80ad6b), url('/assets/images/home/${img}') center/cover no-repeat`,
+                    background: `linear-gradient(-45deg, transparent, #ffffff65, white), url('/assets/images/home/${img}') center/cover no-repeat`,
                   }}
                 >
                   <div className="promo-info-text">
                     <h3>{title1}</h3>
-                    <h4 style={{ textDecoration: "line-through" }}>{harga}</h4>
                     <h3>{title2}</h3>
+                    <h4>read more...</h4>
                   </div>
                 </div>
               </Link>

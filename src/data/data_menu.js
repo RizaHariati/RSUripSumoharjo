@@ -75,22 +75,22 @@ const home_slider = [
   {
     id: 2,
     index: "pro2",
-    img: "swab-test.jpg",
+    img: "pcr-test.jpg",
     title1: "Swab PCR",
     title2: "Hanya : Rp 525.000",
     harga: "Rp.620.000",
     text: "Mendukung keputusan Presiden RI Ir.H. Joko Widodo",
-    color: "red",
+    color: "black",
   },
   {
     id: 3,
     index: "pro3",
-    img: "test.jpg",
-    title1: "Swab Antigen",
-    title2: "Hanya :Rp 150.000",
+    img: "VaksinasiCOVID.jpg",
+    title1: "Jadwal pemberian",
+    title2: "Vaksin Gratis",
     harga: "Rp.220.000",
-    text: "Mendukung keputusan Presiden RI Ir.H. Joko Widodo",
-    color: "#f10c0c",
+    text: "Saat ini tersedia Vaksin Pfeizer dan Sinovac, setiap hari senin s/d jum'at jam 08.00-15.00. Hubungi (0721)700232 untuk melakukan penjadwalan",
+    color: "black",
   },
   {
     id: 4,
@@ -110,7 +110,7 @@ const home_slider = [
     title2: "Harga mulai dari Rp. 451.414",
 
     text: "Tubuh seperti Kendaraan, perlu pemeriksaan secara rutin",
-    color: "white",
+    color: "black",
   },
   {
     id: 6,

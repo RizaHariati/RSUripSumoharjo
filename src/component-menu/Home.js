@@ -71,7 +71,7 @@ const HomeImage = ({ img, color, text, title1, title2, position }) => {
     <div
       className={`home-image ${position}`}
       style={{
-        background: `radial-gradient(transparent, transparent,transparent, #000000a6), url('/assets/images/home/${img}') center/cover no-repeat`,
+        background: `radial-gradient(transparent, transparent,transparent,transparent, #00000a06), url('/assets/images/home/${img}') center/cover no-repeat`,
       }}
     >
       <div
@@ -80,7 +80,7 @@ const HomeImage = ({ img, color, text, title1, title2, position }) => {
       >
         <div className="home-title">
           <h1>{title1}</h1>
-          <h1>{title2}</h1>
+          <h2>{title2}</h2>
         </div>
         <div className="home-text">
           <h4>{text}</h4>
