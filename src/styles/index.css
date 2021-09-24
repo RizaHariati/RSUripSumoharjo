@@ -796,7 +796,7 @@ body::-webkit-scrollbar {
     z-index: 5;
   }
   .nav-wave {
-    height: 50%;
+    height: 40%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -888,6 +888,7 @@ body::-webkit-scrollbar {
   color: var(--green1);
   -webkit-transition: var(--transition);
   transition: var(--transition);
+  z-index: 2;
 }
 
 .arrow.next {
