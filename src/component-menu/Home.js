@@ -74,10 +74,7 @@ const HomeImage = ({ img, color, text, title1, title2, position }) => {
         background: `radial-gradient(transparent, transparent,transparent,transparent, #00000a06), url('/assets/images/home/${img}') center/cover no-repeat`,
       }}
     >
-      <div
-        className="home-welcome"
-        style={{ borderLeft: `3px solid ${color}`, color: `${color}` }}
-      >
+      <div className="home-welcome" style={{ color: `${color}` }}>
         <div className="home-title">
           <h1>{title1}</h1>
           <h2>{title2}</h2>
