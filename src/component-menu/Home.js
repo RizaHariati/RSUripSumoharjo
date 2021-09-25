@@ -53,12 +53,11 @@ const Home = () => {
         </div>
       </div>
       <div className="home-intro">
-        <h2>Bekerja dan mengobati sambil beramal </h2>
-        <h3>
-          Dengan semangat Islami, yang menyediakan pelayanan kesehatan untuk
-          semua kalangan sebagai bagian dari rahmat untuk alam semesta
-        </h3>
         <img src="/assets/images/wave2.jpg" alt="wave" />
+        <div className="home-box">
+          <div className="line"></div>
+          <h4>By Rizahariati for Azri Coding &#9400; 2021</h4>
+        </div>
       </div>
     </div>
   );
@@ -68,12 +67,14 @@ export default Home;
 
 const HomeImage = ({ img, color, text, title1, title2, position }) => {
   return (
+    // <div className={`home-image ${position}`}>
     <div
       className={`home-image ${position}`}
       style={{
-        background: `radial-gradient(transparent, transparent,transparent,transparent, #00000a06), url('/assets/images/home/${img}') center/cover no-repeat`,
+        background: `url('/assets/images/home/${img}') center/cover no-repeat`,
       }}
     >
+      <img src={`/assets/images/home/${img}`} alt={title1} />
       <div className="home-welcome" style={{ color: `${color}` }}>
         <div className="home-title">
           <h1>{title1}</h1>

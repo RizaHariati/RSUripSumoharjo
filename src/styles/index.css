@@ -83,7 +83,7 @@ body::-webkit-scrollbar {
 
 .container {
   width: 100%;
-  height: calc(100vh - 8rem);
+  height: calc(100vh - 6rem);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 70% 30%;
@@ -95,7 +95,7 @@ body::-webkit-scrollbar {
 .navbar {
   position: relative;
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   background-color: var(--light1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,7 +113,7 @@ body::-webkit-scrollbar {
 }
 
 .logo img {
-  width: 70%;
+  width: 60%;
 }
 
 .nav-links {
@@ -194,7 +194,7 @@ body::-webkit-scrollbar {
 
 .emergency {
   color: var(--accent);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .emergency:hover {
@@ -209,8 +209,8 @@ body::-webkit-scrollbar {
   position: absolute;
   background-color: var(--light1);
   width: 30%;
-  height: calc(100vh - 8rem);
-  top: 5rem;
+  height: calc(100vh - 6rem);
+  top: 4.01rem;
   right: 0;
   z-index: 5;
   -webkit-box-shadow: var(--box-shadow);
@@ -352,7 +352,7 @@ body::-webkit-scrollbar {
 
 .banner {
   width: 100%;
-  height: calc(100vh - 8rem);
+  height: calc(100vh - 6rem);
   overflow: hidden;
   overflow-y: auto;
   position: relative;
@@ -386,12 +386,11 @@ body::-webkit-scrollbar {
 
 .promo {
   width: 100%;
-  min-height: 3rem;
+  min-height: 2rem;
   background-color: var(--green1);
   color: var(--dark2);
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  line-height: 3rem;
   padding: 0 2rem;
   position: relative;
   overflow: hidden;
@@ -399,7 +398,7 @@ body::-webkit-scrollbar {
 
 .promo-header {
   width: 100%;
-  height: 3rem;
+  height: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,6 +411,8 @@ body::-webkit-scrollbar {
 }
 
 .promo-header h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
   letter-spacing: 0.2rem;
 }
 
@@ -689,11 +690,14 @@ body::-webkit-scrollbar {
     -ms-grid-columns: 65% 35%;
         grid-template-columns: 65% 35%;
   }
+  .nav-submenu {
+    width: 35%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
   .container {
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 6rem);
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 5.5rem auto;
@@ -766,16 +770,17 @@ body::-webkit-scrollbar {
     display: none;
   }
   .navbar {
-    height: 4rem;
+    height: 3rem;
     padding: 0.5rem;
     -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.568);
             box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.568);
   }
   .logo img {
-    width: 80%;
+    height: 2.5rem;
+    width: auto;
   }
   .nav-links {
-    grid-gap: 1rem;
+    grid-gap: 0.2rem;
     padding: 0;
   }
   .nav-links li {
@@ -783,17 +788,23 @@ body::-webkit-scrollbar {
     margin: 0;
   }
   .nav-btn {
-    font-size: 1.3rem !important;
+    font-size: 0.8rem !important;
   }
   .nav-btn p {
     display: none;
   }
+  .nav-btn i {
+    margin: 0.1rem;
+  }
   .nav-submenu {
     font-size: 1rem;
-    line-height: 1rem;
-    top: 4.05rem;
-    height: 60vh;
+    line-height: 0.5rem;
+    padding: 2rem;
+    top: 3.05rem;
+    height: 40vh;
     z-index: 5;
+    -webkit-box-shadow: var(--big-shadow);
+            box-shadow: var(--big-shadow);
   }
   .nav-wave {
     height: 40%;
@@ -801,9 +812,9 @@ body::-webkit-scrollbar {
        object-fit: cover;
   }
   .container {
-    height: calc(100vh - 4rem);
+    height: calc(100vh - 3rem);
     position: absolute;
-    top: 4rem;
+    top: 3rem;
     -ms-grid-rows: 4rem auto;
         grid-template-rows: 4rem auto;
   }
@@ -823,10 +834,12 @@ body::-webkit-scrollbar {
     padding: 0.5rem 0;
   }
   .ex-menu i {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.6rem;
   }
   .ex-menu h2 {
+    width: 80%;
+    white-space: pre-wrap;
     font-size: 0.7rem;
     line-height: 0.7rem;
   }
@@ -839,11 +852,9 @@ body::-webkit-scrollbar {
   .promo {
     display: none;
   }
-  .navbar {
-    height: 4rem;
-    padding: 0.5rem;
-    -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.568);
-            box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.568);
+  .logo img {
+    height: 2.2rem;
+    width: auto;
   }
   .nav-links {
     grid-gap: 1rem;
@@ -854,9 +865,7 @@ body::-webkit-scrollbar {
     margin: 0;
   }
   .nav-submenu {
-    top: 4.05rem;
-    height: 50vh;
-    z-index: 5;
+    height: 35vh;
   }
 }
 
@@ -882,21 +891,21 @@ body::-webkit-scrollbar {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   background-color: transparent;
   border: transparent;
-  color: var(--green1);
+  color: var(--light2);
   -webkit-transition: var(--transition);
   transition: var(--transition);
   z-index: 2;
 }
 
 .arrow.next {
-  right: 2rem;
+  right: 0.5rem;
 }
 
 .arrow.prev {
-  left: 2rem;
+  left: 0.5rem;
 }
 
 .arrow:hover {
@@ -905,7 +914,7 @@ body::-webkit-scrollbar {
 
 .home-image {
   position: absolute;
-  top: 0;
+  background-color: var(--light1);
   width: 100%;
   height: 100%;
   -webkit-transition: all 0.6s ease-in-out;
@@ -926,6 +935,18 @@ body::-webkit-scrollbar {
 .home-image.after {
   left: 100%;
   opacity: 0;
+}
+
+.home-image img {
+  -webkit-backdrop-filter: blur(0.5rem) grayscale(0.3) brightness(0.6);
+          backdrop-filter: blur(0.5rem) grayscale(0.3) brightness(0.6);
+  width: 100%;
+  height: 100%;
+  padding: 2rem 3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
 }
 
 .home-welcome {
@@ -1966,24 +1987,6 @@ label {
     height: 100%;
     z-index: 1;
   }
-  .home-intro h2 {
-    display: none;
-    font-weight: 600;
-    letter-spacing: normal;
-    color: var(--green1);
-    text-transform: capitalize;
-    z-index: 3;
-    font-size: 1.4rem;
-    padding: 0 1rem;
-  }
-  .home-intro h3 {
-    display: none;
-    padding: 1rem;
-    font-size: 1.2rem;
-    z-index: 3;
-    letter-spacing: normal;
-    color: var(--dark2);
-  }
   .home-intro img {
     height: 100%;
     width: 100%;
@@ -1993,42 +1996,73 @@ label {
        object-position: bottom left;
     position: absolute;
     z-index: 2;
+    bottom: 4rem;
+  }
+  .home-intro .home-box {
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--green1);
+    color: var(--light1);
+    z-index: 2;
     bottom: 0;
+  }
+  .home-intro .home-box h4 {
+    font-size: 0.8rem;
+    color: var(--light1);
+  }
+  .home-intro .home-box .line {
+    display: inline-block;
+    padding: 0;
+    width: calc(100vw - 4rem);
+    height: 1px;
+    background-color: var(--green2);
+    margin-bottom: 1rem;
   }
   .home-image {
     overflow: visible;
     z-index: 2;
   }
+  .home-image img {
+    padding: 1rem 2rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+  }
   .home-welcome {
     z-index: 4;
-    left: 1.5rem;
-    width: 90%;
+    left: 2rem;
+    width: calc(100vw - 4rem);
+    height: 60%;
     top: 105%;
+    border: 1px solid var(--green2);
   }
   .arrow {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .arrow.prev {
-    left: 1rem;
+    left: 0.3rem;
   }
   .arrow.next {
-    right: 1rem;
+    right: 0.3rem;
   }
   .home-title {
     color: var(--dark3) !important;
   }
   .home-title h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
   }
   .home-title h2 {
-    letter-spacing: normal;
-    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
   }
   .home-text h4 {
     color: var(--dark3) !important;
-    letter-spacing: normal;
-    font-weight: 400;
-    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 1rem;
   }
   .ex-menu-header h1 {
     font-size: 1.5rem;
