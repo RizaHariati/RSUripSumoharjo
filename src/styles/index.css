@@ -865,7 +865,7 @@ body::-webkit-scrollbar {
     margin: 0;
   }
   .nav-submenu {
-    height: 35vh;
+    height: 37vh;
   }
 }
 
@@ -976,7 +976,7 @@ body::-webkit-scrollbar {
 }
 
 .home-welcome .home-title h2 {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .home-welcome .home-text {
@@ -985,7 +985,7 @@ body::-webkit-scrollbar {
 }
 
 .home-welcome .home-text h4 {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .search-container {
