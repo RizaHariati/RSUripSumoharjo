@@ -69,12 +69,21 @@ const HomeImage = ({ img, color, text, title1, title2, position }) => {
   return (
     // <div className={`home-image ${position}`}>
     <div
-      className={`home-image ${position}`}
-      style={{
-        background: `url('/assets/images/home/${img}') center/cover no-repeat`,
-      }}
+      className={`home-image ${position} `}
+      // style={{
+      //   background: `url('/assets/images/home/${img}') center/cover no-repeat`,
+      // }}
     >
-      <img src={`/assets/images/home/${img}`} alt={title1} />
+      <img
+        src={`/assets/images/home/${img}`}
+        alt={title1}
+        className="home-image-background"
+      />
+      <img
+        src={`/assets/images/home/${img}`}
+        alt={title1}
+        className="home-image-foreground"
+      />
       <div className="home-welcome" style={{ color: `${color}` }}>
         <div className="home-title">
           <h1>{title1}</h1>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { main_menu } from "./data/data_menu";
 import { useGlobalContext } from "./context";
+
 const Menu = ({ url }) => {
   const { setTerm, hideDokterList } = useGlobalContext();
   const [newUrl, setNewUrl] = useState("");
@@ -27,7 +28,7 @@ const Menu = ({ url }) => {
             className={`ex-menu ${className}`}
             onClick={handleClick}
           >
-            <i className={icon}></i>
+            <img src={`/assets/images/icons/${icon}.png`} alt={icon} />
             <h2>{title}</h2>
           </Link>
         );
