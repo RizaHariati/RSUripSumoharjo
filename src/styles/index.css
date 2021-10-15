@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;900&display=swap");
 :root {
   --light1: #fefefc;
-  --light2: white;
-  --dark1: #000000a6;
+  --light2: #fbfbf9;
+  --dark1: #000000b9;
   --dark2: #002c00;
   --dark3: #2f4858;
-  --green1: #2d8547;
-  --green2: #9fafa1;
+  --green1: #00704a;
+  --green2: #7d8d7f;
   --green3: #9fafa134;
   --yellow: #f7f760;
   --accent: red;
@@ -16,9 +16,9 @@
   --secondary-font: "Urbanist", sans-serif;
   --transition: all 0.2s ease-in-out;
   --border: 1px solid var(--light1);
-  --border-green: 1px solid var(--green1);
-  --radius: 2px;
-  --radius-big: 5px;
+  --border-green: 1px solid var(--green2);
+  --radius: 5px;
+  --radius-big: 8px;
   --box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.253);
   --big-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.568);
   --background: linear-gradient(45deg, #80ad6b41, #ffffffc5, white),
@@ -108,8 +108,9 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   padding: 0 2rem;
   z-index: 3;
-  -webkit-box-shadow: inset 0px 1px 4px 1px rgba(0, 0, 0, 0.568);
-  box-shadow: inset 0px 1px 4px 1px rgba(0, 0, 0, 0.568);
+  border-bottom: 1px solid var(--green2);
+  /* -webkit-box-shadow: inset 0px 1px 4px 1px rgba(0, 0, 0, 0.568);
+  box-shadow: inset 0px 1px 4px 1px rgba(0, 0, 0, 0.568); */
 }
 
 .logo img {
@@ -213,8 +214,8 @@ body::-webkit-scrollbar {
   top: 4.01rem;
   right: 0;
   z-index: 5;
-  -webkit-box-shadow: var(--box-shadow);
-  box-shadow: var(--box-shadow);
+  /* -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow); */
   padding: 3rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -575,11 +576,11 @@ body::-webkit-scrollbar {
 
 .ex-menu-content {
   width: 100%;
-  background-color: var(--light1);
+  background-color: var(--light2);
 }
 
 .ex-menu-content {
-  background-color: var(--light1);
+  background-color: var(--light2);
   padding: 2rem;
   text-align: center;
   display: -webkit-box;
@@ -643,10 +644,10 @@ body::-webkit-scrollbar {
 .ex-menu-intro .image img {
   width: 100%;
   height: 100%;
-  -o-object-position: center;
-  object-position: center;
-  -o-object-fit: cover;
-  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+  -o-object-fit: fill;
+  object-fit: fill;
 }
 
 .ex-menu-intro .info {
@@ -781,8 +782,8 @@ body::-webkit-scrollbar {
   .navbar {
     height: 3rem;
     padding: 0.5rem;
-    -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.568);
-    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.568);
+    /* -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.568);
+    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.568); */
   }
   .logo img {
     height: 2.5rem;
@@ -1028,7 +1029,7 @@ body::-webkit-scrollbar {
 }
 
 .search-container {
-  background-color: var(--light1);
+  background-color: var(--light2);
   width: 100%;
   max-width: 600px;
   display: -ms-grid;
@@ -1051,7 +1052,7 @@ body::-webkit-scrollbar {
 
 .form-search {
   width: 100%;
-  background-color: var(--light2);
+  background-color: var(--light1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1071,6 +1072,7 @@ body::-webkit-scrollbar {
   margin: auto;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+  border-radius: var(--radius);
 }
 
 .form-search:hover {
@@ -1194,7 +1196,7 @@ body::-webkit-scrollbar {
 }
 
 .rawat-inap-room {
-  background-color: var(--light2);
+  background-color: var(--light1);
   border-left: 4px solid var(--green1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1205,8 +1207,8 @@ body::-webkit-scrollbar {
   flex-direction: column;
   width: 100%;
   border-radius: var(--radius);
-  -webkit-box-shadow: var(--box-shadow);
-  box-shadow: var(--box-shadow);
+  /* -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow); */
   overflow: hidden;
 }
 
@@ -1336,7 +1338,8 @@ body::-webkit-scrollbar {
   -webkit-transition: var(--transition);
   transition: var(--transition);
   border: var(--border-green);
-  background-color: var(--light2);
+  background-color: var(--light1);
+  border-radius: var(--radius);
 }
 
 .pelayanan-info p i {
@@ -1500,7 +1503,8 @@ body::-webkit-scrollbar {
 }
 
 fieldset {
-  border: 2px solid var(--green1);
+  background-color: var(--light1);
+  border: 1px solid var(--green2);
   border-radius: var(--radius);
   width: 70%;
   min-width: 400px;
@@ -1564,6 +1568,8 @@ label {
 }
 
 .field-text {
+  background-color: var(--light2);
+  border: 1px solid var(--green2);
   width: 300px;
   height: 1.4rem;
 }
@@ -1719,7 +1725,7 @@ label {
   -webkit-transition: var(--transition);
   transition: var(--transition);
   border-left: 0.2rem solid var(--green1);
-  background-color: var(--light2);
+  background-color: var(--light1);
 }
 
 .paket h3 {
@@ -1791,6 +1797,7 @@ label {
   max-width: 500px;
   background-color: var(--green1);
   margin: auto;
+  border-radius: var(--radius);
 }
 
 .pasien-btn-container {
@@ -2401,6 +2408,7 @@ label {
   }
   fieldset {
     border: 1px solid var(--green1);
+
     min-width: 100%;
     font-size: 0.8rem;
     line-height: 1.2rem;
@@ -2941,6 +2949,28 @@ label {
   }
   .modal-info .text {
     line-height: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .home-welcome {
+    top: 40%;
+    transform: translateY(-50%);
+    line-height: 1rem;
+  }
+  .home-title h1 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+  .home-title h2 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  .home-text h4 {
+    font-size: 0.8rem;
+  }
+  .ex-menu-header h1 {
     font-size: 1rem;
   }
 }

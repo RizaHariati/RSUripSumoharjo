@@ -63,7 +63,7 @@ const PendaftaranDetail = () => {
           enableReinitialize
         >
           <Form>
-            <fieldset>
+            <fieldset className="field-pendaftaran">
               <legend>Informasi Pendaftar</legend>
               <div>
                 <label>
