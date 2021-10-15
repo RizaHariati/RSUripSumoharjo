@@ -389,7 +389,7 @@ body::-webkit-scrollbar {
   width: 100%;
   min-height: 2rem;
   background-color: var(--green1);
-  color: var(--dark2);
+  color: black;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   padding: 0 2rem;
