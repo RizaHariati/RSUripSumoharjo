@@ -53,7 +53,7 @@ const Home = () => {
         </div>
       </div>
       <div className="home-intro">
-        <img src="/assets/images/wave2.jpg" alt="wave" />
+        <img src="/assets/images/wave2.svg" alt="wave" />
         <div className="home-box">
           <div className="line"></div>
           <h4>By Rizahariati for Azri Coding &#9400; 2021</h4>

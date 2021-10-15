@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;900&display=swap");
 :root {
   --light1: #fefefc;
-  --light2: #fbfbf9;
+  --light2: #eef0f0;
+  --light3: #e2e2e2;
   --dark1: #000000b9;
   --dark2: #002c00;
   --dark3: #2f4858;
@@ -16,7 +17,7 @@
   --secondary-font: "Urbanist", sans-serif;
   --transition: all 0.2s ease-in-out;
   --border: 1px solid var(--light1);
-  --border-green: 1px solid var(--green2);
+  --border-green: 1px solid var(--light3);
   --radius: 5px;
   --radius-big: 8px;
   --box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.253);
@@ -88,8 +89,8 @@ body::-webkit-scrollbar {
   display: grid;
   -ms-grid-columns: 70% 30%;
   grid-template-columns: 70% 30%;
-  -webkit-box-shadow: inset 2px 7px 6px 5px rgba(0, 0, 0, 0.568);
-  box-shadow: inset 2px 7px 6px 5px rgba(0, 0, 0, 0.568);
+  /* -webkit-box-shadow: inset 2px 7px 6px 5px rgba(0, 0, 0, 0.568);
+  box-shadow: inset 2px 7px 6px 5px rgba(0, 0, 0, 0.568); */
 }
 
 .navbar {
@@ -108,7 +109,7 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   padding: 0 2rem;
   z-index: 3;
-  border-bottom: 1px solid var(--green2);
+  border-bottom: 1px solid var(--light3);
   /* -webkit-box-shadow: inset 0px 1px 4px 1px rgba(0, 0, 0, 0.568);
   box-shadow: inset 0px 1px 4px 1px rgba(0, 0, 0, 0.568); */
 }
@@ -213,7 +214,7 @@ body::-webkit-scrollbar {
   height: calc(100vh - 6rem);
   top: 4.01rem;
   right: 0;
-  z-index: 5;
+  z-index: 7;
   /* -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow); */
   padding: 3rem 1rem;
@@ -320,10 +321,10 @@ body::-webkit-scrollbar {
 .nav-wave img {
   width: 100vw;
   height: 100%;
-  -o-object-fit: fill;
-  object-fit: fill;
-  -o-object-position: right;
-  object-position: right;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: left;
+  object-position: left;
 }
 
 .nav-box {
@@ -363,15 +364,16 @@ body::-webkit-scrollbar {
   width: 0.5rem;
   border-radius: var(--radius);
   background-color: var(--green2);
-  -webkit-box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.479);
-  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.479);
+  border: 1px solid var(--light3);
+  /* -webkit-box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.479);
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.479); */
 }
 
 .banner::-webkit-scrollbar-thumb {
-  background-color: var(--light2);
+  background-color: var(--light1);
   border-radius: var(--radius);
-  -webkit-box-shadow: inset 0 0px 2px 1px rgba(0, 0, 0, 0.432);
-  box-shadow: inset 0 0px 2px 1px rgba(0, 0, 0, 0.432);
+  /* -webkit-box-shadow: inset 0 0px 2px 1px rgba(0, 0, 0, 0.432);
+  box-shadow: inset 0 0px 2px 1px rgba(0, 0, 0, 0.432); */
 }
 
 .background-utama {
@@ -553,7 +555,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   background-color: var(--green1);
   border: 1px solid var(--green1);
-  color: var(--light1);
+  color: var(--light2);
   text-transform: capitalize;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -813,8 +815,8 @@ body::-webkit-scrollbar {
     top: 3.05rem;
     height: 40vh;
     z-index: 5;
-    -webkit-box-shadow: var(--big-shadow);
-    box-shadow: var(--big-shadow);
+    /* -webkit-box-shadow: var(--big-shadow);
+    box-shadow: var(--big-shadow); */
   }
   .nav-wave {
     height: 40%;
@@ -999,7 +1001,7 @@ body::-webkit-scrollbar {
   padding: 1rem;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  z-index: 3;
+  z-index: 2;
 }
 
 .home-welcome .home-title {
@@ -1220,7 +1222,7 @@ body::-webkit-scrollbar {
   -ms-grid-columns: 65% 35%;
   grid-template-columns: 65% 35%;
   place-items: center;
-  border-bottom: 0.5px solid var(--green2);
+  border: 0.5px solid var(--light3);
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
@@ -1443,10 +1445,10 @@ body::-webkit-scrollbar {
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
-  border-radius: var(--radius);
 }
 
 .dokter-content {
+  background-color: var(--light1);
   width: 100%;
   max-width: 220px;
   height: 320px;
@@ -1454,7 +1456,9 @@ body::-webkit-scrollbar {
   display: grid;
   -ms-grid-rows: 30% 70%;
   grid-template-rows: 30% 70%;
-  border: 1px solid var(--green1);
+  border: 1px solid var(--light3);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 
 .dokter-image {
@@ -1465,7 +1469,7 @@ body::-webkit-scrollbar {
 }
 
 .dokter-image img {
-  border: 1px solid var(--green1);
+  border: 1px solid var(--green2);
   position: absolute;
   width: 120px;
   height: 120px;
@@ -1494,6 +1498,7 @@ body::-webkit-scrollbar {
 }
 
 .pendaftaran-intro .text {
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -1569,7 +1574,7 @@ label {
 
 .field-text {
   background-color: var(--light2);
-  border: 1px solid var(--green2);
+  border: 1px solid var(--light3);
   width: 300px;
   height: 1.4rem;
 }
@@ -2111,9 +2116,9 @@ label {
     font-size: 1.1rem;
   }
   .home-text h4 {
-    color: var(--dark3) !important;
+    color: black !important;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1rem;
   }
   .ex-menu-header h1 {
@@ -2969,6 +2974,7 @@ label {
   }
   .home-text h4 {
     font-size: 0.8rem;
+    color: black !important;
   }
   .ex-menu-header h1 {
     font-size: 1rem;

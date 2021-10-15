@@ -76,7 +76,7 @@ const Submenu = () => {
         })}
       </div>
       <div className="nav-wave">
-        <img src="/assets/images/wave.jpg" alt="wave" />
+        <img src="/assets/images/wave.svg" alt="wave" />
       </div>
     </div>
   );

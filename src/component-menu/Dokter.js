@@ -65,10 +65,11 @@ const Dokter = () => {
               type="text"
               name="search-spesialis"
               id="search-spesialis"
+              style={{ color: "var(--green2)" }}
               value={
                 term.termName === "special"
                   ? term.key
-                  : "silahkan pilih spesialisasi.."
+                  : "silahkan pilih spesialisasi...  \u261B"
               }
               readOnly
             />
