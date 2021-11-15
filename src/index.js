@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import "./styles/index.css";
+import "./styles/style.css";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
 import { AppProvider } from "./context";
 

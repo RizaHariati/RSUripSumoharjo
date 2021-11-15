@@ -52,11 +52,11 @@ const About = () => {
                 </button>
               </div>
               {selected === id && (
-                <div className="about-info">
+                <ul className="about-info">
                   {info.map((infoItem, index) => {
-                    return <h4 key={index}>{infoItem}</h4>;
+                    return <li key={index}>{infoItem}</li>;
                   })}
-                </div>
+                </ul>
               )}
             </div>
           );

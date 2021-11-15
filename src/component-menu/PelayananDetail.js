@@ -4,7 +4,7 @@ import { useGlobalContext } from "../context";
 const PelayananDetail = () => {
   return (
     <div className="ex-menu-subhead">
-      <h1>Pelayanan</h1>
+      <h2>Pelayanan</h2>
       <div className="line" />
       <div className="pelayanan-content">
         {data_pelayanan.map((data) => {
@@ -21,7 +21,7 @@ export const Detail = ({ id, title, hari, jam, telp }) => {
   const { showModal } = useGlobalContext();
   return (
     <div className="pelayanan-info" onClick={() => showModal(id)}>
-      <h2>{title}</h2>
+      <h3>{title}</h3>
       <h4>{hari}</h4>
       <p>jam: {jam}</p>
       {telp.map((phone) => {

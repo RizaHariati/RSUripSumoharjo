@@ -29,7 +29,7 @@ const Menu = ({ url }) => {
             onClick={handleClick}
           >
             <img src={`/assets/images/icons/${icon}.png`} alt={icon} />
-            <h2>{title}</h2>
+            <h5>{title}</h5>
           </Link>
         );
       })}

@@ -7,7 +7,7 @@ const FasilitasDetail = () => {
 
   return (
     <div className="ex-menu-subhead">
-      <h1>Fasilitas</h1>
+      <h2>Fasilitas</h2>
       <div className="line" />
       <div className="fasilitas-container">
         {fasMenu.map((menu, index) => {
@@ -16,7 +16,7 @@ const FasilitasDetail = () => {
           );
           return (
             <div key={index}>
-              <h2>{menu}</h2>
+              <h3>{menu}</h3>
               <div className="line"></div>
               <div className="fasilitas-content">
                 {newData.map((data) => {
@@ -38,8 +38,11 @@ export const Detail = ({ id, title, img }) => {
   const { showModal } = useGlobalContext();
   return (
     <div className="fasilitas-info" onClick={() => showModal(id)}>
-      <h4>{title}</h4>
-      <img src={`/assets/images/pelayanan-fasilitas/${img}.jpg`} alt={title} />
+      <p>{title}</p>
+      <img
+        src={`/assets/images/pelayanan-fasilitas/small/${img}.jpg`}
+        alt={title}
+      />
     </div>
   );
 };

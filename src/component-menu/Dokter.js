@@ -58,7 +58,7 @@ const Dokter = () => {
         <div className="form-search">
           <label htmlFor="search-spesialis" className="search-label">
             <i className="fa fa-id-card-o"></i>
-            <h3>Cari Berdasarkan Spesialisasi</h3>
+            <h4>Cari Berdasarkan Spesialisasi</h4>
           </label>
           <div className="search-header">
             <input
@@ -98,7 +98,7 @@ const Dokter = () => {
         <form className="form-search" onSubmit={(e) => handleInput(e)}>
           <label htmlFor="search-nama" className="search-label">
             <i className="fa fa-id-card"></i>
-            <h3>Cari Berdasarkan Nama</h3>
+            <h4>Cari Berdasarkan Nama</h4>
           </label>
           <div className="search-header">
             <input

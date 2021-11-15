@@ -53,7 +53,7 @@ const PendaftaranDetail = () => {
   });
   return (
     <div className="ex-menu-subhead">
-      <h1>Pendaftaran</h1>
+      <h2>Pendaftaran</h2>
       <div className="line" />
       <div className="form-container">
         <Formik

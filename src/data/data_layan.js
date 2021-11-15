@@ -113,7 +113,7 @@ const data_fasilitas = [
   },
   {
     id: "fas5",
-    title: "Instalasi Gawat Darurat ( 24 Jam )",
+    title: "Instalasi Gawat Darurat (24 Jam)",
     img: "icu",
     info: [
       {

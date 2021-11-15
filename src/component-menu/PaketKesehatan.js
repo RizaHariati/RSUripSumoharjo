@@ -1,7 +1,8 @@
 import React from "react";
 import { home_slider } from "../data/data_menu";
 import { useGlobalContext } from "../context";
-const Checkup = () => {
+
+const PaketKesehatan = () => {
   const { showModal } = useGlobalContext();
   const data = home_slider.slice(1, 5);
 
@@ -27,7 +28,7 @@ const Checkup = () => {
                 <div className="paket-info">
                   <h3>{title1}</h3>
                   <h4 className="paket-harga">{title2}</h4>
-                  <h4>{text}</h4>
+                  <p>{text}</p>
                 </div>
               </div>
             </div>
@@ -38,4 +39,4 @@ const Checkup = () => {
   );
 };
 
-export default Checkup;
+export default PaketKesehatan;

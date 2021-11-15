@@ -35,10 +35,10 @@ const Promo = () => {
         </button>
       </div>
       <div className="promo-info-container">
-        <h2>PPKM (Promo Peduli Kesehatan Masyarakat)</h2>
+        <h3>PPKM (Promo Peduli Kesehatan Masyarakat)</h3>
         <div className="promo-infos">
           {data.map((item) => {
-            const { index, title1, title2, img, harga } = item;
+            const { index, title1, title2, img } = item;
             return (
               <Link
                 key={index}
@@ -52,9 +52,9 @@ const Promo = () => {
                   }}
                 >
                   <div className="promo-info-text">
-                    <h3>{title1}</h3>
-                    <h3>{title2}</h3>
-                    <h4>read more...</h4>
+                    <h4>{title1}</h4>
+                    <h4>{title2}</h4>
+                    <p>read more...</p>
                   </div>
                 </div>
               </Link>

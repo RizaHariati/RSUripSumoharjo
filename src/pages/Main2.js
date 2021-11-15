@@ -6,8 +6,8 @@ import RawatInap from "../component-menu/RawatInap";
 import Dokter from "../component-menu/Dokter";
 import Fasilitas from "../component-menu/Fasilitas";
 import DaftarPasien from "../component-menu/DaftarPasien";
-import Checkup from "../component-menu/Checkup";
 import DataPasien from "../component-menu/DataPasien";
+import PaketKesehatan from "../component-menu/PaketKesehatan";
 
 const Main = () => {
   const { url } = useRouteMatch();
@@ -31,8 +31,8 @@ const Main = () => {
           <Route path={`${url}/daftarpasien`}>
             <DaftarPasien />
           </Route>
-          <Route path={`${url}/checkup`}>
-            <Checkup />
+          <Route path={`${url}/paketkesehatan`}>
+            <PaketKesehatan />
           </Route>
           <Route path={`${url}/dataPasien`}>
             <DataPasien />

@@ -13,11 +13,11 @@ import ModalPendaftaran from "./component-main/ModalPendaftaran";
 import PasienPage from "./pages/PasienPage";
 
 const App = () => {
-  const { modal, modalDaftar } = useGlobalContext();
+  const { modal, modalDaftar, setIsPromo } = useGlobalContext();
 
   return (
     <Router>
-      <div className="main-container">
+      <div className="main-container" onWheel={() => setIsPromo(false)}>
         <Promo />
         <Nav />
         <Switch>

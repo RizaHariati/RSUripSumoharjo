@@ -28,7 +28,7 @@ const Nav = () => {
         <li>
           <Link to="/" className="main-link" onClick={() => hideSubmenu()}>
             <button className="nav-btn">
-              <i className="fa fa-home" style={{ fontSize: "1.5rem" }}></i>
+              <i className="fa fa-home"></i>
             </button>
           </Link>
         </li>
@@ -68,7 +68,7 @@ const Submenu = () => {
                 className="nav-link-to"
                 onClick={() => hideSubmenu()}
               >
-                {link}
+                <h4>{link}</h4>
               </Link>
               <div className="line"></div>
             </div>

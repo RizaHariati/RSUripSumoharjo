@@ -12,10 +12,10 @@ const RawatInap = () => {
         </h4>
         <h1>Rawat Inap</h1>
         <div className="line" />
-        <h3>Pendaftaran Rawat Inap dan Pemesanan Kamar</h3>
-        <h3>
+        <h4>Pendaftaran Rawat Inap dan Pemesanan Kamar</h4>
+        <h4>
           Buka setiap hari (24 jam) <i className="fa fa-phone" /> 0811 7270 537
-        </h3>
+        </h4>
       </div>
       <div className="ex-menu-subhead"></div>
       <div className="ex-menu-intro">
@@ -23,17 +23,17 @@ const RawatInap = () => {
           className="image"
           style={{
             background:
-              "linear-gradient(90deg, transparent, transparent, transparent, white, white), url('/assets/images/pilihan-kamar/RSJakarta.jpg') center/cover no-repeat ",
+              "url('/assets/images/pilihan-kamar/RSJakarta.jpg') center/cover no-repeat ",
           }}
         ></div>
         <div className="info">
-          <h4>
+          <p>
             Ruang Rawat Inap RS Urip Sumoharjo terbagi atas ruang perawatan
             dewasa, ruang perawatan anak, ruang perawatan kebidanan, ruang
             isolasi dan ruang rawat intensif. Rumah Sakit Jakarta memiliki
             beberapa jenis ruang perawatan yang sesuai dengan kebutuhan dan
             kondisi keuangan Anda.
-          </h4>
+          </p>
         </div>
       </div>
 
@@ -81,7 +81,7 @@ const RawatInapRoom = ({ id, kelas, pasien, harga, img, fasilitas }) => {
             {fasilitas.map((item, index) => {
               return (
                 <li key={index}>
-                  <h2> &#10003;</h2> <p>{item}</p>
+                  <h4> &#10003;</h4> <p>{item}</p>
                 </li>
               );
             })}

@@ -28,10 +28,16 @@ const AppProvider = ({ children }) => {
   const [dataPasien, setdataPasien] = useState(initValue);
   const [openModal, setOpenModal] = useState(false);
   const [dataOnline, setDataOnline] = useState("");
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+
   const hideDokterList = () => {
     setDokterList(false);
   };
-
+  useEffect(() => {
+    if (windowSize <= 850) {
+      setIsPromo(false);
+    }
+  }, [windowSize]);
   const showDokterList = () => {
     setDokterList(true);
   };

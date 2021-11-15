@@ -84,13 +84,13 @@ const HomeImage = ({ img, color, text, title1, title2, position }) => {
         alt={title1}
         className="home-image-foreground"
       />
-      <div className="home-welcome" style={{ color: `${color}` }}>
+      <div className="home-welcome">
         <div className="home-title">
-          <h1>{title1}</h1>
-          <h2>{title2}</h2>
+          <h1 style={{ color: `${color}` }}>{title1}</h1>
+          <h2 style={{ color: `${color}` }}>{title2}</h2>
         </div>
         <div className="home-text">
-          <h4>{text}</h4>
+          <h4 style={{ color: `${color}` }}>{text}</h4>
         </div>
       </div>
     </div>

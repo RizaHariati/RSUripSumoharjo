@@ -30,10 +30,10 @@ const main_menu = [
   },
   {
     id: "menu4",
-    url: "checkup",
+    url: "paketkesehatan",
     title: "paket kesehatan",
     icon: "discount",
-    class: "checkup",
+    class: "paketkesehatan",
   },
   {
     id: "menu5",
@@ -66,7 +66,7 @@ const home_slider = [
   {
     id: 1,
     index: "pro1",
-    img: "anthony-shkraba.jpg",
+    img: "urip1.jpg",
     title1: "RS Urip Sumoharjo",
     title2: "Bandarlampung",
     text: " Memberikan pelayanan kesehatan secara profesional dan prima kepada seluruh masyarakat.",
@@ -80,7 +80,7 @@ const home_slider = [
     title2: "Hanya : Rp 525.000",
     harga: "Rp.620.000",
     text: "Mendukung keputusan Presiden RI Ir.H. Joko Widodo",
-    color: "black",
+    color: "var(--dark1)",
   },
   {
     id: 3,
@@ -90,7 +90,7 @@ const home_slider = [
     title2: "Vaksin Gratis",
     harga: "Rp.220.000",
     text: "Saat ini tersedia Vaksin Pfeizer dan Sinovac, setiap hari senin s/d jum'at jam 08.00-15.00. Hubungi (0721)700232 untuk melakukan penjadwalan",
-    color: "black",
+    color: "var(--dark1)",
   },
   {
     id: 4,
@@ -118,7 +118,7 @@ const home_slider = [
     title1: "RS Urip Sumoharjo",
     title2: "Bandarlampung",
     text: " Memberikan pelayanan kesehatan secara profesional dan prima kepada seluruh masyarakat.",
-    color: "#fefefc",
+    color: "var(--dark1)",
   },
 ];
 export { main_menu, nav_menu, home_slider };

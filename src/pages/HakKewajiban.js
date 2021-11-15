@@ -26,7 +26,7 @@ const HakKewajiban = () => {
                   return (
                     <div key={id} className="rule-container">
                       <div className="rule-header">
-                        <h3>{title}</h3>
+                        <h4>{title}</h4>
                         <button
                           onClick={() => {
                             toggle(id);

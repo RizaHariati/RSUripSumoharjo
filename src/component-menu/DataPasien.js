@@ -15,15 +15,15 @@ const DataPasien = () => {
           <h3>
             Dengan mendaftar secara online Anda mendapatkan kemudahan untuk:
           </h3>
-          <h3>
+          <h4>
             <span> &#10003;</span> Membayar tagihan Anda via Internet
-          </h3>
-          <h3>
+          </h4>
+          <h4>
             <span> &#10003;</span>Melihat rekam medis{" "}
-          </h3>
-          <h3>
+          </h4>
+          <h4>
             <span> &#10003;</span> Melihat hasil laboratorium dan tes kesehatan{" "}
-          </h3>
+          </h4>
         </div>
       </div>
       <AksesDataPasien />
