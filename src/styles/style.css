@@ -2422,7 +2422,7 @@ label {
   }
   .dokter-content {
     width: 90%;
-    height: 220px;
+    height: 250px;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 30% 70%;
@@ -2875,6 +2875,12 @@ label {
   }
 }
 @media screen and (max-width: 1600px) {
+  .dokter-info {
+    top: 50px;
+  }
+  .dokter-content {
+    height: 300px;
+  }
   .nav-btn .fa,
   .pelayanan-info .fa {
     font-size: 30px;
@@ -2946,7 +2952,10 @@ label {
     height: 50%;
   }
   .dokter-content {
-    height: 200px;
+    height: 250px;
+  }
+  .dokter-info {
+    top: 30px;
   }
   .dokter-image img {
     width: 80px;

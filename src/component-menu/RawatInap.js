@@ -81,7 +81,7 @@ const RawatInapRoom = ({ id, kelas, pasien, harga, img, fasilitas }) => {
             {fasilitas.map((item, index) => {
               return (
                 <li key={index}>
-                  <h4> &#10003;</h4> <p>{item}</p>
+                  <p> &#10003;</p> <h5>{item}</h5>
                 </li>
               );
             })}
