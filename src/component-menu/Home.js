@@ -54,7 +54,7 @@ const Home = () => {
       </div>
       <div className="home-intro">
         <div className="home-box">
-          <h4>By Rizahariati for Azri Coding &#9400; 2021</h4>
+          <p>By Rizahariati for Azri Coding &#9400; 2021</p>
         </div>
       </div>
       <img src="/assets/images/wave2.svg" className="home-wave" alt="wave" />

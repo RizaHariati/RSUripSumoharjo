@@ -8,7 +8,8 @@ const Nav = () => {
   return (
     <nav className="navbar">
       <Link to="/" className="logo">
-        <img src="/assets/images/logo white.jpg" alt="logo" />
+        <img src="/assets/images/logo white.jpg" alt="logo" className="logo1" />
+        <img src="/assets/images/logo bulat.jpg" alt="logo" className="logo2" />
       </Link>
       <ul className="nav-links">
         <li>

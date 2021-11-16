@@ -123,12 +123,16 @@ const Login = ({ port }) => {
         <Form className="formik-login">
           <div className="login-form">
             <label name="email">email</label>
-            <ErrorMessage name="email" component="p" />
+            <ErrorMessage name="email" component="p" className="login-email" />
             <Field id="email" name="email" className="field-login" />
           </div>
           <div className="login-form">
             <label name="password">password</label>
-            <ErrorMessage name="password" component="p" />
+            <ErrorMessage
+              name="password"
+              component="p"
+              className="login-email"
+            />
             <Field
               type="password"
               id="password"
@@ -138,9 +142,15 @@ const Login = ({ port }) => {
           </div>
           <div className="login-form">
             <label name="registrasi">nomor registrasi</label>
-            <ErrorMessage name="registrasi" component="p" />
+            <ErrorMessage
+              name="registrasi"
+              component="p"
+              className="login-email"
+            />
             <Field id="registrasi" name="registrasi" className="field-login" />
-            <p>nomor registrasi diberikan RS Urip Sumoharjo saat pendaftaran</p>
+            <h5>
+              nomor registrasi diberikan RS Urip Sumoharjo saat pendaftaran
+            </h5>
           </div>
 
           <button type="submit" className="login-btn">
@@ -185,17 +195,21 @@ const Register = ({ port }) => {
         <Form className="formik-login">
           <div className="login-form">
             <label name="nama">nama lengkap</label>
-            <ErrorMessage name="nama" component="p" />
+            <ErrorMessage name="nama" component="p" className="login-email" />
             <Field id="nama" name="nama" className="field-login" />
           </div>
           <div className="login-form">
             <label name="email">email</label>
-            <ErrorMessage name="email" component="p" />
+            <ErrorMessage name="email" component="p" className="login-email" />
             <Field id="email" name="email" className="field-login" />
           </div>
           <div className="login-form">
             <label name="password1">password</label>
-            <ErrorMessage name="password1" component="p" />
+            <ErrorMessage
+              name="password1"
+              component="p"
+              className="login-email"
+            />
             <Field
               type="password"
               id="password1"
@@ -205,7 +219,11 @@ const Register = ({ port }) => {
           </div>
           <div className="login-form">
             <label name="password2">konfirmasi password</label>
-            <ErrorMessage name="password2" component="p" />
+            <ErrorMessage
+              name="password2"
+              component="p"
+              className="login-email"
+            />
             <Field
               type="password"
               id="password2"
@@ -215,9 +233,15 @@ const Register = ({ port }) => {
           </div>
           <div className="login-form">
             <label name="registrasi">nomor registrasi</label>
-            <ErrorMessage name="registrasi" component="p" />
+            <ErrorMessage
+              name="registrasi"
+              component="p"
+              className="login-email"
+            />
             <Field id="registrasi" name="registrasi" className="field-login" />
-            <p>nomor registrasi diberikan RS Urip Sumoharjo saat pendaftaran</p>
+            <h5>
+              nomor registrasi diberikan RS Urip Sumoharjo saat pendaftaran
+            </h5>
           </div>
 
           <button type="submit" className="login-btn">

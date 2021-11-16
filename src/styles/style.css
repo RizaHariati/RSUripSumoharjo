@@ -72,11 +72,11 @@ legend {
 }
 
 h5 {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 20px;
   letter-spacing: 1px;
   font-weight: 500;
-  color: var(--light2);
+  color: var(--dark2);
 }
 
 p,
@@ -115,6 +115,12 @@ button,
     line-height: 18px;
     letter-spacing: 0.5px;
     font-weight: 500;
+  }
+  h5 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0px;
+    font-weight: 300;
   }
   a h5 {
     font-size: 20px;
@@ -200,12 +206,12 @@ button,
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 26px;
+    line-height: 24px;
     font-weight: 600;
   }
   h2 {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 24px;
     letter-spacing: 0.5px;
   }
@@ -218,12 +224,18 @@ button,
   h4 {
     font-size: 16px;
     line-height: 16px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0px;
     font-weight: 500;
   }
   a h5 {
-    font-size: 14px;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 10px;
+    letter-spacing: 0px;
+    font-weight: 300;
+  }
+  h5 {
+    font-size: 10px;
+    line-height: 10px;
     letter-spacing: 0px;
     font-weight: 300;
   }
@@ -236,7 +248,7 @@ button,
     font-size: 16px;
     line-height: 16px;
     font-weight: 300;
-    letter-spacing: 0.5px;
+    letter-spacing: 0px;
   }
 }
 
@@ -312,11 +324,11 @@ legend {
 }
 
 h5 {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 20px;
   letter-spacing: 1px;
   font-weight: 500;
-  color: var(--light2);
+  color: var(--dark2);
 }
 
 p,
@@ -355,6 +367,12 @@ button,
     line-height: 18px;
     letter-spacing: 0.5px;
     font-weight: 500;
+  }
+  h5 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0px;
+    font-weight: 300;
   }
   a h5 {
     font-size: 20px;
@@ -440,12 +458,12 @@ button,
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 26px;
+    line-height: 24px;
     font-weight: 600;
   }
   h2 {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 24px;
     letter-spacing: 0.5px;
   }
@@ -458,12 +476,18 @@ button,
   h4 {
     font-size: 16px;
     line-height: 16px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0px;
     font-weight: 500;
   }
   a h5 {
-    font-size: 14px;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 10px;
+    letter-spacing: 0px;
+    font-weight: 300;
+  }
+  h5 {
+    font-size: 10px;
+    line-height: 10px;
     letter-spacing: 0px;
     font-weight: 300;
   }
@@ -476,7 +500,7 @@ button,
     font-size: 16px;
     line-height: 16px;
     font-weight: 300;
-    letter-spacing: 0.5px;
+    letter-spacing: 0px;
   }
 }
 
@@ -623,7 +647,7 @@ button,
 
 .home-welcome {
   position: absolute;
-  z-index: 10;
+  z-index: 1;
   top: 60%;
   left: 4rem;
   width: 70%;
@@ -657,12 +681,14 @@ button,
   .home-welcome {
     position: absolute;
     width: calc(100% - 6rem);
-    top: 125%;
-    z-index: 4;
+    top: 115%;
   }
   .home-title h1,
   .home-title h2 {
     color: var(--dark1) !important;
+  }
+  .home-text {
+    margin-top: 1rem;
   }
   .home-text h4 {
     color: var(--dark1) !important;
@@ -689,12 +715,13 @@ button,
     width: calc(100% - 4rem);
     z-index: 3;
   }
-  .home-intro .home-box h4 {
+  .home-intro .home-box p {
+    font-size: 12px;
+    width: 100%;
     position: absolute;
-    bottom: -1rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    bottom: -1.5rem;
+    left: 0;
+    color: var(--light3);
   }
   .home-wave {
     display: block;
@@ -704,7 +731,7 @@ button,
     height: 50%;
     -o-object-fit: cover;
        object-fit: cover;
-    z-index: 2;
+    z-index: -1;
   }
 }
 
@@ -756,14 +783,19 @@ body::-webkit-scrollbar {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 2rem;
-  z-index: 5;
+  z-index: 3;
   border-bottom: 0.5px solid var(--light2);
   /* -webkit-box-shadow: inset 0px 1px 4px 1px rgba(0, 0, 0, 0.568);
   box-shadow: inset 0px 1px 4px 1px rgba(0, 0, 0, 0.568); */
 }
 
-.logo img {
+.logo .logo1 {
+  display: block;
   width: 60%;
+}
+
+.logo .logo2 {
+  display: none;
 }
 
 .nav-links {
@@ -857,11 +889,11 @@ body::-webkit-scrollbar {
 .nav-submenu {
   position: absolute;
   background-color: var(--light1);
-  width: 30%;
+  width: 32%;
   height: calc(100vh - 6rem);
   top: 4.01rem;
   right: 0;
-  z-index: 7;
+  z-index: 3;
   /* -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow); */
   padding: 3rem 1rem;
@@ -897,11 +929,11 @@ body::-webkit-scrollbar {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   grid-gap: 2rem;
   font-size: 1.5rem;
 }
@@ -915,7 +947,6 @@ body::-webkit-scrollbar {
 
 .nav-social .fa:hover {
   color: var(--green1);
-  font-size: 102%;
 }
 
 .nav-link-close {
@@ -941,7 +972,7 @@ body::-webkit-scrollbar {
 
 .nav-link-list .line {
   display: block;
-  width: 200px;
+  width: 150px;
   height: 2px;
   background-color: var(--green1);
   margin: 0.5rem auto;
@@ -1138,7 +1169,6 @@ body::-webkit-scrollbar {
 
 .exclusive-menu {
   width: 100%;
-  min-width: 380px;
   height: 100%;
   display: -ms-grid;
   display: grid;
@@ -1324,12 +1354,6 @@ body::-webkit-scrollbar {
   .navbar {
     height: 3rem;
     padding: 0.5rem;
-    /* -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.568);
-    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.568); */
-  }
-  .logo img {
-    height: 2.5rem;
-    width: auto;
   }
   .nav-links {
     grid-gap: 0.2rem;
@@ -1366,7 +1390,6 @@ body::-webkit-scrollbar {
     grid-template-rows: 4rem auto;
   }
   .exclusive-menu {
-    width: 100vw;
     min-height: 40px;
     height: 100%;
   }
@@ -1391,6 +1414,12 @@ body::-webkit-scrollbar {
 }
 
 @media only screen and (max-device-width: 480px) {
+  .nav-social .fa {
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: var(--dark2);
+    font-size: 30px;
+  }
   .promo {
     display: none;
   }
@@ -2187,14 +2216,14 @@ label {
 .login-form {
   margin: auto;
   width: 100%;
-  line-height: 1.5rem;
+  line-height: 3rem;
 }
 
 .login-form label {
   text-transform: capitalize;
 }
 
-.login-form label span {
+.login-email {
   color: red;
 }
 
@@ -2368,7 +2397,7 @@ label {
     min-width: 200px;
   }
   .login-form {
-    line-height: 1.2rem;
+    line-height: 2.2rem;
   }
   .field-login {
     height: 1.4rem;
@@ -2409,10 +2438,6 @@ label {
   }
   .pendaftaran-intro {
     margin-top: 2rem;
-  }
-  .list-search {
-    font-size: 0.8rem;
-    line-height: 2rem;
   }
   fieldset {
     border: 1px solid var(--green1);
@@ -2852,7 +2877,7 @@ label {
 @media screen and (max-width: 1600px) {
   .nav-btn .fa,
   .pelayanan-info .fa {
-    font-size: 24px;
+    font-size: 30px;
   }
   legend {
     font-size: 18px;
@@ -2866,6 +2891,9 @@ label {
 }
 
 @media screen and (max-width: 1000px) {
+  .nav-link-list .line {
+    width: 100px;
+  }
   .container {
     width: 100%;
     height: calc(100vh - 6rem);
@@ -2927,6 +2955,10 @@ label {
 }
 
 @media screen and (max-width: 850px) {
+  .nav-btn .fa,
+  .pelayanan-info .fa {
+    font-size: 22px;
+  }
   .search-label {
     margin: 0.25rem auto;
   }
@@ -2958,6 +2990,22 @@ label {
 }
 
 @media screen and (max-width: 600px) {
+  .nav-btn p {
+    font-size: 14px;
+  }
+  .list-search {
+    max-height: 200px;
+  }
+  .online-btn-container {
+    grid-gap: 0rem;
+  }
+  .online-btn {
+    padding: 0.5rem;
+    width: 100%;
+  }
+  .nav-link-list .line {
+    width: 80px;
+  }
   .container {
     height: calc(100vh - 3rem);
   }
@@ -2987,9 +3035,14 @@ label {
 }
 
 @media only screen and (max-device-width: 480px) {
-  .nav-btn .fa,
-  .pelayanan-info .fa {
-    font-size: 18px;
+  .logo .logo1 {
+    display: none;
+  }
+  .logo .logo2 {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
   }
   legend {
     font-size: 18px;
@@ -3003,6 +3056,12 @@ label {
   .ex-menu img {
     width: 25px;
     height: 25px;
+  }
+  .ex-menu {
+    padding-inline: 0;
+  }
+  .exclusive-menu {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
