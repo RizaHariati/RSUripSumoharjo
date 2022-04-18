@@ -18,7 +18,7 @@ This webiste's design is very simple, inspired by Mayo Clinic's website. easy-to
 
 * [React Router Dom](https://reactrouter.com/)
 * [Formik](https://formik.org/)
-* [yup](https://github.com/jquense/yup)
+* [Yup](https://github.com/jquense/yup)
 
 
 
