@@ -1,7 +1,7 @@
 # Urip Sumoharjo Hospital Website
 
 A mock up website design for a local hospital in Bandar Lampung \
-Please visit the website on : [rsuripsumoharjo](https://rsuripsumoharjo-mockup.netlify.app/)
+Please visit the website on : [RSUripsumoharjo](https://rsuripsumoharjo-mockup.netlify.app/)
 
 ## Description
 
