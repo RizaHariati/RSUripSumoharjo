@@ -1,6 +1,6 @@
-# AzriBook (based on facebook)
+# Urip Sumoharjo Hospital Website
 
-A website design for a local hospital in Bandar Lampung \
+A mock up website design for a local hospital in Bandar Lampung \
 Please visit the website on : [rsuripsumoharjo](https://rsuripsumoharjo-mockup.netlify.app/)
 
 ## Description
